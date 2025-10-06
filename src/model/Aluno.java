@@ -3,14 +3,12 @@ package model;
 import java.time.LocalDate;
 
 public class Aluno {
-    private long matricula;
+    //Matrícula é constante - não muda
+    private final long matricula;
     private String nome;
     private LocalDate dataNascimento;
     private String turma;
     private char sexo;
-
-    //Construtor sem parâmetros (default)
-    public Aluno(){}
 
     //Inicializa matrícula e o resto atribui 0 ou null
     public Aluno(long matricula){
@@ -38,10 +36,6 @@ public class Aluno {
 
     public long getMatricula(){
         return matricula;
-    }
-
-    public void setMatricula(long matricula){
-        this.matricula = matricula;
     }
 
     public LocalDate getDataNascimento(){

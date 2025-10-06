@@ -6,8 +6,7 @@ public class Main {
 
     public static void main(String[] args){
 
-        Aluno aluno = new Aluno();
-        aluno.setMatricula(202122010023l);
+        Aluno aluno = new Aluno(202122010023l);
         aluno.setNome("João");
         aluno.setDataNascimento(
                 LocalDate.of(2004,2,4));
