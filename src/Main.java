@@ -6,11 +6,18 @@ public class Main {
 
     public static void main(String[] args){
 
-        Aluno joao = new Aluno(202012010001l, "João",
-                LocalDate.of(2020,2,25),
-                "P3 ADS", 'M');
-        joao.setNome("João da Silva");
-        System.out.println(joao.getNome());
+        Aluno aluno = new Aluno();
+        aluno.setMatricula(202122010023l);
+        aluno.setNome("João");
+        aluno.setDataNascimento(
+                LocalDate.of(2004,2,4));
+        aluno.setTurma("P3 ADS");
+        aluno.setSexo('M');
+        System.out.println(aluno.getMatricula());
+        System.out.println(aluno.getNome());
+        System.out.println(aluno.getDataNascimento());
+        System.out.println(aluno.getTurma());
+        System.out.println(aluno.getSexo());
 
     }
 

@@ -36,4 +36,36 @@ public class Aluno {
         this.nome = nome;
     }
 
+    public long getMatricula(){
+        return matricula;
+    }
+
+    public void setMatricula(long matricula){
+        this.matricula = matricula;
+    }
+
+    public LocalDate getDataNascimento(){
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(LocalDate dataNascimento){
+        this.dataNascimento = dataNascimento;
+    }
+
+    public String getTurma(){
+        return turma;
+    }
+
+    public void setTurma(String turma){
+        this.turma = turma;
+    }
+
+    public char getSexo(){
+        return sexo;
+    }
+
+    public void setSexo(char sexo){
+        this.sexo = sexo;
+    }
+
 }
