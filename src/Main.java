@@ -1,22 +1,21 @@
 import model.Aluno;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args){
 
-        Aluno aluno = new Aluno(202122010023l);
-        aluno.setNome("João");
-        aluno.setDataNascimento(
-                LocalDate.of(2004,2,4));
-        aluno.setTurma("P3 ADS");
-        aluno.setSexo('M');
-        System.out.println(aluno.getMatricula());
-        System.out.println(aluno.getNome());
-        System.out.println(aluno.getDataNascimento());
-        System.out.println(aluno.getTurma());
-        System.out.println(aluno.getSexo());
+        double ad = 0.1;
+        double bd = 0.2;
+        double somad = ad + bd;
+        System.out.println(somad == 0.3);
+        BigDecimal a = new BigDecimal("0.1");
+        BigDecimal b = new BigDecimal("0.2");
+        BigDecimal soma = a.add(b);
+        System.out.println(new BigDecimal("0.3").equals(soma));
 
     }
 
