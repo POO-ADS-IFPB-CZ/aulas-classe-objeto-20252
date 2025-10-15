@@ -2,7 +2,7 @@ package model;
 
 import java.time.LocalDate;
 
-public class Funcionario extends Pessoa{
+public abstract class Funcionario extends Pessoa{
 
     //Protected = Engloba o pacote + as subclasses
     protected float salario;
@@ -16,9 +16,8 @@ public class Funcionario extends Pessoa{
         this.dataAdmissao = dataAdmissao;
     }
 
-    public float getSalario() {
-        return salario;
-    }
+    //Funciona como um contrato
+    public abstract float getSalario();
 
     public void setSalario(float salario) {
         this.salario = salario;
