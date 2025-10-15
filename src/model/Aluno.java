@@ -6,7 +6,6 @@ public class Aluno extends Pessoa{
     private String turma;
     private char sexo;
 
-    //Construtor com parâmetros
     public Aluno(long matricula, String nome, LocalDate dataNascimento,
                  String turma, char sexo) {
         super(matricula, nome, dataNascimento);

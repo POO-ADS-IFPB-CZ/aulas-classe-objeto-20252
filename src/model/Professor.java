@@ -2,25 +2,17 @@ package model;
 
 import java.time.LocalDate;
 
-public class Professor extends Pessoa{
-    private LocalDate dataAdmissao;
+public class Professor extends Funcionario{
+
     private String disciplina;
 
     public Professor(long matricula, String nome,
                      LocalDate dataNascimento,
-                     LocalDate dataAdmissao, String disciplina){
+                     float salario, LocalDate dataAdmissao,
+                     String disciplina){
         //Obrigatório chamar o construtor da superclasse
-        super(matricula, nome, dataNascimento);
-        this.dataAdmissao = dataAdmissao;
+        super(matricula, nome, dataNascimento, salario, dataAdmissao);
         this.disciplina = disciplina;
-    }
-
-    public LocalDate getDataAdmissao() {
-        return dataAdmissao;
-    }
-
-    public void setDataAdmissao(LocalDate dataAdmissao) {
-        this.dataAdmissao = dataAdmissao;
     }
 
     public String getDisciplina() {

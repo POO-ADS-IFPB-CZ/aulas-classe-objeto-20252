@@ -8,12 +8,7 @@ public class Main {
 
     public static void main(String[] args){
 
-        Aluno aluno = new Aluno(202012010001l,
-                "João", LocalDate.now(), "ADS", 'M');
-        Aluno aluno2 = new Aluno(202012010001l,
-                "João", LocalDate.now(), "ADS", 'M');
-        Aluno aluno3 = new Aluno(202012010001l,
-                "João", LocalDate.now(), "ADS", 'M');
+
 
     }
 
