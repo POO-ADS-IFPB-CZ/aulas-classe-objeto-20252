@@ -4,7 +4,8 @@ import java.time.LocalDate;
 
 public class Funcionario extends Pessoa{
 
-    private float salario;
+    //Protected = Engloba o pacote + as subclasses
+    protected float salario;
     private LocalDate dataAdmissao;
 
     public Funcionario(long matricula, String nome,

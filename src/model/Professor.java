@@ -22,4 +22,13 @@ public class Professor extends Funcionario{
     public void setDisciplina(String disciplina) {
         this.disciplina = disciplina;
     }
+
+    //Os professores de POO recebem 20% a mais
+    @Override
+    public float getSalario(){
+        if(disciplina.equals("POO"))
+            return salario*1.2f;
+        return salario;
+    }
+
 }
