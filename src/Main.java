@@ -15,8 +15,6 @@ public class Main {
         Aluno aluno3 = new Aluno(202012010001l,
                 "João", LocalDate.now(), "ADS", 'M');
 
-        System.out.println(Aluno.getContador());
-
     }
 
 }

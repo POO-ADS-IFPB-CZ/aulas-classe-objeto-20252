@@ -2,45 +2,17 @@ package model;
 
 import java.time.LocalDate;
 
-public class Professor {
-    private long matricula;
-    private String nome;
-    private LocalDate dataNascimento;
+public class Professor extends Pessoa{
     private LocalDate dataAdmissao;
     private String disciplina;
 
     public Professor(long matricula, String nome,
                      LocalDate dataNascimento,
                      LocalDate dataAdmissao, String disciplina){
-        this.matricula = matricula;
-        this.nome = nome;
-        this.dataNascimento = dataNascimento;
+        //Obrigatório chamar o construtor da superclasse
+        super(matricula, nome, dataNascimento);
         this.dataAdmissao = dataAdmissao;
         this.disciplina = disciplina;
-    }
-
-    public long getMatricula(){
-        return matricula;
-    }
-
-    public void setMatricula(long matricula){
-        this.matricula = matricula;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public LocalDate getDataNascimento() {
-        return dataNascimento;
-    }
-
-    public void setDataNascimento(LocalDate dataNascimento) {
-        this.dataNascimento = dataNascimento;
     }
 
     public LocalDate getDataAdmissao() {
