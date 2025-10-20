@@ -31,4 +31,15 @@ public class Professor extends Funcionario{
         return salario;
     }
 
+
+        @Override
+    public String toString(){
+        return "Professor{matricula:"+super.getMatricula()+"," +
+                "nome:"+super.getNome()+"," +
+                "dataNascimento:"+super.getDataNascimento()+"," +
+                "salario:"+getSalario()+"," +
+                "dataAdmissao:"+super.getDataAdmissao()+"," +
+                "disciplina:"+disciplina+"}";
+    }
+
 }
