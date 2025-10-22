@@ -7,6 +7,17 @@ public class Main {
 
     public static void main(String[] args){
 
+        /*
+        Folha de pagamento
+        Criar superclasse nela colocar método
+            calcularPagamento()
+            Assalariado - CPF, nome, salario
+            Comissionado - CPF, nome, totalVendas,
+                porcentagemComissao
+         */
+
+
+
         Veiculo moto = new Moto("ABC-3214", "João",
                 LocalDateTime.now());
         Veiculo carro = new Carro("XYZ-6593", "Maria",
