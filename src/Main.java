@@ -1,30 +1,16 @@
 import model.*;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-
 public class Main {
 
     public static void main(String[] args){
 
-        /*
-        Folha de pagamento
-        Criar superclasse nela colocar método
-            calcularPagamento()
-            Assalariado - CPF, nome, salario
-            Comissionado - CPF, nome, totalVendas,
-                porcentagemComissao
-         */
+        Empregado empregado = new Assalariado("111.111.111-01",
+            "João", 2000);
+        Empregado empregado1 = new Comissionado("222.222.222-02",
+                "Maria", 10000, 5);
 
-
-
-        Veiculo moto = new Moto("ABC-3214", "João",
-                LocalDateTime.now());
-        Veiculo carro = new Carro("XYZ-6593", "Maria",
-                LocalDateTime.now(), 7);
-
-        System.out.println(moto.precoEstacionamento());
-        System.out.println(carro.precoEstacionamento());
+        System.out.println(empregado.calcularPagamento());
+        System.out.println(empregado1.calcularPagamento());
 
     }
 
